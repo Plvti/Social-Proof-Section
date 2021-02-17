@@ -17,16 +17,23 @@
   position: fixed;
 }
 .ratingi {
-  right: 25%;
+  right: 15%;
   top: 25%;
   position: fixed;
 }
-
+.gwiazdka {
+  margin-right: 5px;
+}
 .jeden {
   border: 1px solid;
   background-color: var(--lightGrayishMagenta);
   border-color: var(--lightGrayishMagenta);
   border-radius: 8px;
+  height: 40px;
+  padding-top: 20px;
+  padding-left: 15px;
+  width: 400px;
+  transform: translate(-40px, 0);
 }
 
 .dwa {
@@ -34,6 +41,10 @@
   background-color: var(--lightGrayishMagenta);
   border-color: var(--lightGrayishMagenta);
   border-radius: 8px;
+  height: 40px;
+  padding-top: 20px;
+  padding-left: 15px;
+  width: 400px;
 }
 
 .trzy {
@@ -41,6 +52,11 @@
   background-color: var(--lightGrayishMagenta);
   border-color: var(--lightGrayishMagenta);
   border-radius: 8px;
+  height: 40px;
+  padding-top: 20px;
+  padding-left: 15px;
+  width: 400px;
+  transform: translate(40px, 0);
 }
 
 .tekst {
@@ -48,7 +64,7 @@
 }
 
 .duzy {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -60,6 +76,66 @@
   color: var(--veryDarkMagenta);
   font-weight: bold;
 }
+
+.bialy {
+  color: var(--white);
+}
+
+.Potw {
+  color: var(--softPink);
+  padding-left: 35%;
+}
+.imie {
+  padding-left: 35%;
+}
+
+.maly {
+  font-size: 15px;
+}
+
+.fota {
+  border-radius: 50%;
+  display: flex;
+  left: 15%;
+  transform: translate(15px, 50%);
+}
+
+.pierwszy {
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: var(--veryDarkMagenta);
+  background-color: var(--veryDarkMagenta);
+  width: 350px;
+  height: 300px;
+  left: 5%;
+  bottom: 15%;
+  position: fixed;
+}
+
+.drugi {
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: var(--veryDarkMagenta);
+  background-color: var(--veryDarkMagenta);
+  width: 350px;
+  height: 300px;
+  left: 30%;
+  bottom: 11%;
+  position: fixed;
+}
+
+.trzeci {
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: var(--veryDarkMagenta);
+  background-color: var(--veryDarkMagenta);
+  width: 350px;
+  height: 300px;
+  left: 55%;
+  bottom: 8%;
+  position: fixed;
+}
+
 :root {
   --darkGrayishMagenta: hsl(303, 10%, 53%);
   --lightGrayishMagenta: hsl(300, 24%, 96%);
