@@ -1,7 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 /* font-family: 'Spartan', sans-serif; */
+@media only screen and (max-width: 600px) {
+  /*edit*/
+  .bloki {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: none !important;
+  }
+  .pierwszy,
+  .drugi,
+  .trzeci {
+    margin: 0 !important;
+    max-width: -webkit-fill-available !important;
+  }
+}
 
-.gora {
+body {
+  /*edit*/
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+}
+
+/* .gora {
   position: absolute;
 }
 
@@ -9,6 +33,17 @@
   position: absolute;
   bottom: 0;
   right: 0;
+} */
+
+.bloki {
+  /* edit*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  gap: 10px;
+  right: 5%;
 }
 
 .LeftTop {
@@ -86,22 +121,67 @@
 }
 
 .przesuwka {
-  transform: translate(30%, -20px);
+  /* edit*/
+  /* transform: translate(30%, -20px); */
+  display: grid;
+  gap: 10px;
+  grid-template-columns: min-content auto;
+  /*  height: 50px;*/ /* niestety inaczej nie można osiągnąć pożądanego efektu, przez jakiś dziwny bug css jeśli skaluje obrazek w gridzie rozmiar gridu nadal jest taki jak nieskalowany obrazek */
 }
 
+.divistir {
+  /* edit*/
+  grid-template-rows: min-content min-content;
+  display: grid;
+}
 .maly {
+  /* edit*/
   font-size: 15px;
-  margin: 25px;
-  display: inline-block;
+  /* margin: 25px; */
+  /* display: inline-block; */
 }
 
+.inner {
+  /* edit*/
+  margin: 25px;
+}
 .fota {
+  /* edit*/
   border-radius: 50%;
   display: flex;
   left: 15%;
-  transform: scale(0.5) translate(40px, 80px);
+  height: 50%;
+  /* transform: scale(0.5); */
+  /* transform: scale(0.5) translate(40px, 80px); */
 }
 
+.blok {
+  /* edit*/
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: var(--veryDarkMagenta);
+  background-color: var(--veryDarkMagenta);
+  max-width: 400px;
+  /* max-height: 300px; */
+  overflow: hidden;
+}
+
+.pierwszy {
+  /* edit*/
+  margin-bottom: 20%;
+}
+
+.drugi {
+  /* edit*/
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.trzeci {
+  /* edit*/
+  margin-top: 20%;
+}
+
+/* 
 .pierwszy {
   border: 1px solid;
   border-radius: 8px;
@@ -113,9 +193,9 @@
   bottom: 15%;
   position: absolute;
   overflow: hidden;
-}
+} */
 
-.drugi {
+/* .drugi {
   border: 1px solid;
   border-radius: 8px;
   border-color: var(--veryDarkMagenta);
@@ -126,8 +206,8 @@
   bottom: 11%;
   position: absolute;
   overflow: hidden;
-}
-
+} */
+/* 
 .trzeci {
   border: 1px solid;
   border-radius: 8px;
@@ -139,7 +219,7 @@
   bottom: 8%;
   position: absolute;
   overflow: hidden;
-}
+} */
 
 :root {
   --darkGrayishMagenta: hsl(303, 10%, 53%);
