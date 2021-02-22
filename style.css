@@ -83,21 +83,23 @@
 
 .Potw {
   color: var(--softPink);
-  padding-left: 35%;
 }
-.imie {
-  padding-left: 35%;
+
+.przesuwka {
+  transform: translate(30%, -20px);
 }
 
 .maly {
   font-size: 15px;
+  margin: 25px;
+  display: inline-block;
 }
 
 .fota {
   border-radius: 50%;
   display: flex;
   left: 15%;
-  transform: translate(15px, 50%);
+  transform: scale(0.5) translate(40px, 80px);
 }
 
 .pierwszy {
@@ -105,11 +107,12 @@
   border-radius: 8px;
   border-color: var(--veryDarkMagenta);
   background-color: var(--veryDarkMagenta);
-  width: 350px;
+  width: 400px;
   height: 300px;
   left: 5%;
   bottom: 15%;
-  position: fixed;
+  position: absolute;
+  overflow: hidden;
 }
 
 .drugi {
@@ -117,11 +120,12 @@
   border-radius: 8px;
   border-color: var(--veryDarkMagenta);
   background-color: var(--veryDarkMagenta);
-  width: 350px;
+  width: 400px;
   height: 300px;
-  left: 30%;
+  left: 35%;
   bottom: 11%;
-  position: fixed;
+  position: absolute;
+  overflow: hidden;
 }
 
 .trzeci {
@@ -129,11 +133,12 @@
   border-radius: 8px;
   border-color: var(--veryDarkMagenta);
   background-color: var(--veryDarkMagenta);
-  width: 350px;
+  width: 400px;
   height: 300px;
-  left: 55%;
+  left: 65%;
   bottom: 8%;
-  position: fixed;
+  position: absolute;
+  overflow: hidden;
 }
 
 :root {
